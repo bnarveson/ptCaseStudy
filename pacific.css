@@ -26,6 +26,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    transition: color 3s ease-out;
 }
 
 h2 {
@@ -200,6 +201,12 @@ textarea {
 
 input[type="submit"] {
     margin-left: 130px;
+}
+
+video,
+embed {
+    float: right;
+    padding-left: 20px;
 }
 
 @media only screen and (max-width: 64em) {
