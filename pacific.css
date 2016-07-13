@@ -68,6 +68,7 @@ footer {
     padding: 20px;
     margin-left: 190px;
     background-color: #FFFFFF;
+    clear: both;
 }
 
 #contact {
@@ -209,6 +210,53 @@ embed {
     padding-left: 20px;
 }
 
+#gallery {
+    height: 200px;
+    position: relative;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+    opacity: .25;
+}
+
+#gallery ul {
+    width: 300px;
+    list-style-type: none;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    color: #171A2A;
+    font-style: italic;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+    opacity: 0;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: left;
+    opacity: 1;
+}
+
 @media only screen and (max-width: 64em) {
     body {
         margin: 0;
@@ -290,5 +338,11 @@ embed {
     }
     input [type="submit"] {
         margin-left: 0;
+    }
+    video {
+        display: none;
+    }
+    #gallery {
+        display: none;
     }
 }
